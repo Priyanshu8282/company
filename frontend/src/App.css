@@ -1,0 +1,5 @@
+.bg-custom {
+    background-image: url('./assets/theme_l.png');
+    background-size: cover;
+    background-position: center;
+  }
