@@ -1,21 +1,19 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link,useLocation} from "react-router-dom";
 import "../../public/fonts.css";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const location = useLocation();
     const [activeLink, setActiveLink] = useState("/");
 
-    useEffect(() => {
-        // Update activeLink based on the current location
-        setActiveLink(location.pathname);
-    }, [location]);
-
-    const handleLinkClick = () => {
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
         setIsOpen(false);
     };
-
+    useEffect(() => {
+        // Update activeLink when the route changes
+        setActiveLink(location.pathname);
+    }, [location]);
     return (
         <nav className="bg-gradient-to-r from-[#1E3A8A] to-[#6A1B9A] text-white shadow-lg font-custom">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +23,7 @@ const Navbar = () => {
                         <Link
                             to="/"
                             className="text-2xl font-bold text-white"
-                            onClick={handleLinkClick}
+                            onClick={() => handleLinkClick("/")}
                         >
                             MyCompany
                         </Link>
@@ -33,14 +31,14 @@ const Navbar = () => {
 
                     {/* Desktop Links */}
                     <div className="hidden md:flex space-x-8">
-                        {["/", "/about", "/services", "/career", "/contact"].map((link) => (
+                        {["/", "/about", "/services", "/career","/contact"].map((link) => (
                             <Link
                                 key={link}
                                 to={link}
                                 className={`transition-colors px-3 py-1 rounded ${
                                     activeLink === link ? "bg-white text-black" : "text-white"
                                 }`}
-                                onClick={handleLinkClick}
+                                onClick={() => handleLinkClick(link)}
                             >
                                 {link === "/" ? "Home" : link.replace("/", "").charAt(0).toUpperCase() + link.slice(2)}
                             </Link>
@@ -79,14 +77,14 @@ const Navbar = () => {
             {/* Mobile Links */}
             {isOpen && (
                 <div className="md:hidden bg-gradient-to-r from-[#1E3A8A] to-[#6A1B9A]">
-                    {["/", "/about", "/services", "/career", "/contact"].map((link) => (
+                    {["/", "/about", "/services", "/career","/contact"].map((link) => (
                         <Link
                             key={link}
                             to={link}
                             className={`block px-4 py-2 transition-colors rounded ${
                                 activeLink === link ? "bg-white text-black" : "text-white"
                             }`}
-                            onClick={handleLinkClick}
+                            onClick={() => handleLinkClick(link)}
                         >
                             {link === "/" ? "Home" : link.replace("/", "").charAt(0).toUpperCase() + link.slice(2)}
                         </Link>

@@ -40,7 +40,7 @@ function About() {
   };
 
   return (
-    <div className="font-custom bg-custom bg-gradient-to-b from-blue-100 via-white to-blue-50 py-16" onMouseMove={handleMouseMove}>
+    <div className="font-custom bg-custom bg-gradient-to-b from-blue-100 via-white to-blue-50 py-16" onMouseMove={handleMouseMove} >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <motion.div
