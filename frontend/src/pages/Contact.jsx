@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Ensure you have the correct package installed
 import "../../public/fonts.css";
-
+import { contact } from "../assets";
 const textVariant = {
   hidden: { opacity: 0, y: -20 },
   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
@@ -13,7 +13,7 @@ function Contact() {
       {/* Hero Section with Background Image */}
       <div className="relative w-full h-auto sm:h-[500px] md:h-[600px] lg:h-[500px] xl:h-[500px] overflow-hidden">
         <img
-          src="https://img.freepik.com/premium-photo/please-contact-us-call-our-customer-service-hotline-businessman-uses-laptop-with-icons-email-phone-mail_27634-699.jpg"
+          src={contact}
           alt="Contact"
           className="w-full h-full object-cover"
         />
