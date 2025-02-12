@@ -15,7 +15,7 @@ const Navbar = () => {
         setActiveLink(location.pathname);
     }, [location]);
     return (
-        <nav className="bg-gradient-to-r from-[#1E3A8A] to-[#6A1B9A] text-white shadow-lg font-custom">
+        <nav className="bg-gradient-to-r from-[#1E3A8A] to-[#6A1B9A] text-white shadow-lg font-raleway ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}

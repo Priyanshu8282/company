@@ -8,6 +8,10 @@ const blurAnimation = {
   animate: { filter: 'blur(0px)', transition: { duration: 1 } },
 };
 
+const hoverAnimation = {
+  hover: { scale: 1.05, transition: { duration: 0.3 } },
+};
+
 function Home() {
   return (
     <div>
@@ -26,11 +30,16 @@ function Home() {
               { icon: <FaLaptopCode className="text-4xl text-blue-500" />, title: "Software Consulting", description: "Offering expert software consulting services to help you make informed decisions." },
               { icon: <FaUsers className="text-4xl text-blue-500" />, title: "IT Support", description: "Providing reliable IT support to ensure your systems run smoothly." },
             ].map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 text-center">
+              <motion.div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform text-center"
+                whileHover="hover"
+                variants={hoverAnimation}
+              >
                 <div className="mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
                 <p className="mt-4 text-gray-700">{service.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -48,10 +57,11 @@ function Home() {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+                className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform"
                 initial="initial"
                 animate="animate"
-                variants={blurAnimation}
+                whileHover="hover"
+                variants={{ ...blurAnimation, ...hoverAnimation }}
               >
                 <h3 className="text-2xl font-bold text-gray-900">{item.title}</h3>
                 <p className="mt-4 text-gray-700">{item.description}</p>
