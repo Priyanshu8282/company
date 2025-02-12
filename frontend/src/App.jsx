@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import Career from './pages/Career';
 import Footer from './Components/Footer';
 import Contact from './pages/Contact';
+import Cursor from './Components/Cursor';
+
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         </Routes>
       
       <Footer />
+      
+      <Cursor/>
     </div>
   );
 }
