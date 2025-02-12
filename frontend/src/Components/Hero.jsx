@@ -41,7 +41,7 @@ function Hero() {
           ))}
         </motion.h1>
         <motion.p
-          className="mt-4 text-lg md:text-2xl"
+          className="mt-4 text-lg md:text-2xl font-alex-brush"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
