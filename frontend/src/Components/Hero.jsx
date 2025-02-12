@@ -17,7 +17,7 @@ function Hero() {
   const subtitle = "Empowering Your Business with Cutting-Edge Technology";
 
   return (
-    <div className="relative h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] font-alex-brush ">
+    <div className="relative h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] font-raleway ">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={heroVideo}
