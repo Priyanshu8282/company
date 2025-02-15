@@ -37,40 +37,49 @@ function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Website Design & Management */}
+          {/* Web Development */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={cardVariants}
             whileHover="hover"
           >
+            <img
+              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
+              alt="Web Development"
+              className="w-full h-48 object-cover rounded-t-lg mb-4"
+            />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
-              Website Design & Management
+              Web Development
             </h2>
             <p className="text-gray-700 mb-6">
-              We provide custom website design, UX/UI design, website
-              maintenance, and SEO-optimized website development.
+              We provide custom web development, responsive design, e-commerce solutions, and web application development.
             </p>
             <h3 className="text-xl font-semibold text-blue-700">Services:</h3>
             <ul className="mt-2 text-gray-600 space-y-1">
-              <li>Custom Website Design</li>
-              <li>UX/UI Design</li>
-              <li>Website Maintenance and Updates</li>
-              <li>SEO-Optimized Website Development</li>
+              <li>Custom Web Development</li>
+              <li>Responsive Design</li>
+              <li>E-commerce Solutions</li>
+              <li>Web Application Development</li>
             </ul>
           </motion.div>
 
           {/* Website Pentesting */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={cardVariants}
             whileHover="hover"
           >
+              <img
+              src="https://www.impactqa.com/wp-content/uploads/2022/01/Penetration-Blog.jpg"
+              alt="Web Development"
+              className="w-full h-48 object-cover rounded-t-lg mb-4"
+            />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
               Website Pentesting (Cybersecurity)
             </h2>
@@ -89,13 +98,18 @@ function Services() {
 
           {/* Business Automation */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300"
+            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={cardVariants}
             whileHover="hover"
           >
+            <img
+              src="https://th.bing.com/th/id/OIP.b3ZutFjRGcjXOArZT6xU5wHaE8?rs=1&pid=ImgDetMain"
+              alt="Web Development"
+              className="w-full h-48 object-cover rounded-t-lg mb-4"
+            />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
               Business Automation
             </h2>

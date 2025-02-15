@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../../public/fonts.css'; 
-import { Link } from 'react-router-dom';
+
 import heroVideo from '../assets/hero.mp4'; // Assuming you have a hero video in your assets
 
 const fontAnimation = {
@@ -24,6 +24,8 @@ function Hero() {
         autoPlay
         loop
         muted
+        preload="auto"
+        playsinline
       />
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 bg-black bg-opacity-50">
