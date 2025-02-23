@@ -39,7 +39,7 @@ function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Web Development */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className=" rounded-lg  p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -68,7 +68,7 @@ function Services() {
 
           {/* Website Pentesting */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className=" rounded-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -98,7 +98,7 @@ function Services() {
 
           {/* Business Automation */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className="rounded-lg  p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
