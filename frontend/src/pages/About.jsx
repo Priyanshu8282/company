@@ -16,11 +16,6 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const teamMembers = [
-  { name: "Priyanshu Sharma", role: "Full Stack Developer", img: team_1 },
-  { name: "Lokesh Banjara", role: "Cyber Security", img: "https://via.placeholder.com/150" },
-  { name: "Chirag Soni", role: "Java Developer", img: "https://via.placeholder.com/150" },
-];
 
 function About() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -165,39 +160,7 @@ function About() {
           </motion.div>
         </motion.div>
 
-        {/* Team Section */}
-        <motion.div
-          className="text-center mb-16"
-          initial="hidden"
-          animate="visible"
-          variants={sectionVariants}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Meet Our Team</h2>
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
-            {teamMembers.map((member) => (
-              <SwiperSlide key={member.name}>
-                <div className="text-center shadow-lg rounded-lg bg-white p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                  <img
-                    src={member.img}
-                    alt={member.name}
-                    className="w-32 h-32 mx-auto rounded-full"
-                  />
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </motion.div>
+       
 
         {/* Contact Section */}
         <motion.div
