@@ -37,9 +37,9 @@ function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Web Development */}
+          {/* Software Development */}
           <motion.div
-            className=" rounded-lg  p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className="rounded-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -47,45 +47,44 @@ function Services() {
             whileHover="hover"
           >
             <img
-              src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
-              alt="Web Development"
+              src="https://th.bing.com/th/id/OIP.h0H0954afvQ3m1JSEAch6wHaFW?w=294&h=212&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+              alt="Software Development"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
-              Web Development
+              Software Development
             </h2>
             <p className="text-gray-700 mb-6">
-              We provide custom web development, responsive design, e-commerce solutions, and web application development.
+              We provide custom software development, responsive design, e-commerce solutions, and web and mobile application development.
             </p>
             <h3 className="text-xl font-semibold text-blue-700">Services:</h3>
             <ul className="mt-2 text-gray-600 space-y-1">
-              <li>Custom Web Development</li>
+              <li>Custom Software Development</li>
               <li>Responsive Design</li>
               <li>E-commerce Solutions</li>
-              <li>Web Application Development</li>
+              <li>Web and Mobile Application Development</li>
             </ul>
           </motion.div>
 
-          {/* Website Pentesting */}
+          {/* Cybersecurity (Website Pentesting) */}
           <motion.div
-            className=" rounded-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className="rounded-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={cardVariants}
             whileHover="hover"
           >
-              <img
+            <img
               src="https://www.impactqa.com/wp-content/uploads/2022/01/Penetration-Blog.jpg"
-              alt="Web Development"
+              alt="Cybersecurity"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
-              Website Pentesting (Cybersecurity)
+              Cybersecurity (Website Pentesting)
             </h2>
             <p className="text-gray-700 mb-6">
-              We offer web application security testing, threat analysis,
-              security audits, and data encryption solutions.
+              We offer web application security testing, threat analysis, security audits, and data encryption solutions.
             </p>
             <h3 className="text-xl font-semibold text-blue-700">Services:</h3>
             <ul className="mt-2 text-gray-600 space-y-1">
@@ -96,9 +95,9 @@ function Services() {
             </ul>
           </motion.div>
 
-          {/* Business Automation */}
+          {/* Business Automation & BPO Solutions */}
           <motion.div
-            className="rounded-lg  p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
+            className="rounded-lg p-8 transition-shadow duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-blue-100 to-blue-200"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -107,22 +106,23 @@ function Services() {
           >
             <img
               src="https://th.bing.com/th/id/OIP.b3ZutFjRGcjXOArZT6xU5wHaE8?rs=1&pid=ImgDetMain"
-              alt="Web Development"
+              alt="Business Automation & BPO"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-2xl font-bold text-blue-800 mb-4">
-              Business Automation
+              Business Automation & BPO Solutions
             </h2>
             <p className="text-gray-700 mb-6">
-              Automate your workflows and improve productivity with our
-              tailor-made business solutions.
+              Automate your workflows, improve efficiency, and enhance customer engagement with our business process outsourcing solutions.
             </p>
             <h3 className="text-xl font-semibold text-blue-700">Services:</h3>
             <ul className="mt-2 text-gray-600 space-y-1">
               <li>Process Automation</li>
-              <li>Custom Workflow Solutions</li>
-              <li>Integration with Business Tools</li>
               <li>Advanced Analytics and Reporting</li>
+              <li>Customer Support and Call Center Solutions</li>
+              <li>Data Entry and Processing</li>
+              <li>Back-Office Support</li>
+              <li>Technical Support and Help Desk Services</li>
             </ul>
           </motion.div>
         </div>

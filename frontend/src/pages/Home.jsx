@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Hero from '../Components/Hero';
-import { FaCode, FaLaptopCode, FaMobileAlt, FaCloud, FaShieldAlt, FaUsers } from 'react-icons/fa';
+import { FaCode, FaLaptopCode, FaHeadset, FaCloud, FaShieldAlt, FaUsers } from 'react-icons/fa';
 import '../../public/fonts.css'; 
 import Tech from '../Components/Tech';
 
@@ -20,8 +20,13 @@ const headerMotion = {
 };
 
 const services = [
-  { icon: <FaCode className="text-6xl text-black" />, title: "Web Development", description: "Building responsive and scalable web applications.", bgColor: "bg-blue-200" },
-  { icon: <FaMobileAlt className="text-4xl text-black" />, title: "Mobile Development", description: "Creating user-friendly mobile applications for both Android and iOS platforms.", bgColor: "bg-purple-200" },
+  { icon: <FaCode className="text-6xl text-black" />, title: "Software Development", description: "Building robust software solutions, including web and mobile applications, tailored to your business needs.", bgColor: "bg-blue-200" },
+  { 
+    icon: <FaHeadset className="text-4xl text-black" />, 
+    title: "BPO Services", 
+    description: "Offering customer support, data entry, and back-office solutions to streamline business operations.", 
+    bgColor: "bg-yellow-200" 
+  },
   { icon: <FaCloud className="text-4xl text-black" />, title: "Cloud Solutions", description: "Enhancing business operations with cloud-based solutions.", bgColor: "bg-pink-200" },
   { icon: <FaShieldAlt className="text-4xl text-black" />, title: "Cybersecurity", description: "Providing robust security solutions for your business.", bgColor: "bg-green-200" },
   { icon: <FaLaptopCode className="text-4xl text-black" />, title: "Software Consulting", description: "Offering expert software consulting services to help you make informed decisions.", bgColor: "bg-orange-200" },
