@@ -27,10 +27,10 @@ function Services() {
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <h1 className="text-5xl font-extrabold text-blue-800 drop-shadow-md sm:text-5xl text-shadow-cyan">
-            Our Services
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+           Our Services
           </h1>
-          <p className="mt-4 text-lg text-blue-600">
+          <p className="mt-4 text-lg text-gray-700">
             We offer a wide range of services to meet your business needs.
           </p>
         </motion.div>
